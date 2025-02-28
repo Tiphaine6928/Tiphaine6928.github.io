@@ -1,12 +1,12 @@
+/* Styles généraux */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('images/fondportfolio.jpg') no-repeat center center fixed; /* L'image est appliquée à tout le corps */
-    background-size: cover; /* L'image couvre toute la page */
-    filter: contrast(1.2); /* Assombrit l'image pour améliorer la lisibilité du texte */
-    /* Autres options : contrast(1.2), grayscale(50%), blur(5px), etc. */
-    color: white; /* Le texte sera en blanc par défaut */
+    background: url('images/fondportfolio.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: contrast(1.2);
+    color: white;
     text-align: center;
 }
 
@@ -14,34 +14,33 @@ body ul li {
     list-style-type: none;
 }
 
+/* Header */
 header {
     text-align: center;
     padding: 10px 0;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .header-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px; /* Espacement entre la photo et le texte */
+    gap: 40px;
     max-width: 900px;
     width: 100%;
     padding: 20px;
 }
 
-/* Style de la photo */
 .profile-photo {
-    width: 150px;  /* Ajuste la taille selon ton image */
-    height: 150px; 
-    border-radius: 30%; 
-    object-fit: cover; /* S'assure que la photo garde ses proportions */
+    width: 150px;
+    height: 150px;
+    border-radius: 30%;
+    object-fit: cover;
     border: 3px solid white;
 }
 
-.intro {
-    margin-bottom: 0;
-}
-
+/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
@@ -55,38 +54,102 @@ nav ul li {
 nav ul li a {
     color: antiquewhite;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
+nav ul li a:hover {
+    color: #9b59b6;
+}
+
+/* Sections */
 section {
     padding: 50px;
-    background-color:rgb(37, 36, 36);
+    background: rgba(0, 0, 0, 0.8);
     border-radius: 20px;
-    margin-bottom: 10px;
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-top: 10px;
+    margin: 15px auto;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
-.projects-collective {
+h2 {
+    color: #b8aaff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Projets */
+.projects-header {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.projects-collective a {
-    
+.column-title {
+    flex: 1;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    color: #b8aaff;
 }
 
-.project-gallery div {
-    flex: 1 1 30%;
-    margin: 10px;
-    background: #f4f4f4;
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: left;
+}
+
+.projects-column {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    border: 1px solid #444;
 }
 
+.project {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #444;
+    margin-bottom: 15px;
+}
+
+.project h3 {
+    color: #9b59b6;
+}
+
+.project .details p {
+    color: #ddd;
+    margin: 5px 0;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #4B0082;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.project a:hover {
+    background-color: #6A0DAD;
+}
+
+/* Footer */
 footer {
     background: #333;
     color: white;
     text-align: center;
     padding: 20px 0;
 }
+
+
+
