@@ -27,8 +27,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
-function toggleDetails(button, className) {
-    const details = button.parentElement.parentElement.querySelector('.' + className);
-    details.style.display = details.style.display === 'none' ? 'block' : 'none';
-}
