@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/fondportfolio.jpg') no-repeat center center fixed; /* L'image est appliquée à tout le corps */
+    background-size: cover; /* L'image couvre toute la page */
+    filter: contrast(1.2); /* Assombrit l'image pour améliorer la lisibilité du texte */
+    /* Autres options : contrast(1.2), grayscale(50%), blur(5px), etc. */
+    color: white; /* Le texte sera en blanc par défaut */
+    text-align: center;
+}
+
+body ul li {
+    list-style-type: none;
+}
+
+header {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* Espacement entre la photo et le texte */
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Style de la photo */
+.profile-photo {
+    width: 150px;  /* Ajuste la taille selon ton image */
+    height: 150px; 
+    border-radius: 30%; 
+    object-fit: cover; /* S'assure que la photo garde ses proportions */
+    border: 3px solid white;
+}
+
+.intro {
+    margin-bottom: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px;
+    background-color:rgb(37, 36, 36);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.projects-collective {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects-collective a {
+    
+}
+
+.project-gallery div {
+    flex: 1 1 30%;
+    margin: 10px;
+    background: #f4f4f4;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
