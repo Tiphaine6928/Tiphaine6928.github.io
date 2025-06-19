@@ -67,56 +67,94 @@ nav ul li a:hover {
 
 /* Sections */
 section {
-    padding: 50px;
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 20px;
-    margin: 15px auto;
-    width: 80%;
-    max-width: 900px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    padding: 60px 20px;
+    margin: 40px auto;
+    max-width: 1000px;
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
 }
 
 h2 {
-    color: #b8aaff;
-    text-align: center;
+    font-size: 2em;
     margin-bottom: 20px;
+    color: #f0e68c; /* un doré doux qui tranche bien */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #f0e68c;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+p, li {
+    line-height: 1.6;
+    font-size: 1.1em;
 }
 
 /* Projets */
 .projects-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    text-align: left;
-    align-items: center;
+    margin-top: 20px;
 }
 
 .project {
-    background: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
     padding: 20px;
+    margin-bottom: 30px;
+    border-left: 5px solid #9b59b6;
     border-radius: 10px;
-    text-align: center;
-    border: 1px solid #444;
-    width: 90%;
-    max-width: 600px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.02);
 }
 
 .project h3 {
     color: #9b59b6;
-    font-size: 1.8em;
     margin-bottom: 10px;
 }
 
 .project .description {
-    color: #ddd;
-    font-size: 1em;
+    font-style: italic;
     margin-bottom: 15px;
+}
+
+.details p strong {
+    color: #ffd700;
+}
+
+.details ul {
+    padding-left: 0;
+}
+
+.details li::before {
+    margin-right: 5px;
 }
 
 .project .details {
     color: #ddd;
     text-align: center;
     margin-bottom: 15px;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+.buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #9b59b6;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.buttons a:hover {
+    background-color: #8e44ad;
 }
 
 .project .buttons {
@@ -152,6 +190,42 @@ h2 {
 
 .project a:hover {
     background-color: #6A0DAD;
+}
+
+/* Compétences */
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+}
+
+#skills li {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Expériences */
+.experience .job {
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #3498db;
+}
+
+.experience h3 {
+    color: #3498db;
+}
+
+/* Contact */
+#contact p {
+    font-size: 1.2em;
+    margin: 10px 0;
 }
 
 /* Footer */
