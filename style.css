@@ -31,6 +31,10 @@ header {
     flex-wrap: wrap;
 }
 
+.header-container .intro h1 {
+    text-align: left;
+}
+
 .profile-photo {
     width: 150px;
     height: 150px;
